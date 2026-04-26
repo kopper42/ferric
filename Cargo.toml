@@ -1,0 +1,15 @@
+[package]
+name = "playground"
+version = "0.1.0"
+edition = "2021"
+description = "Agentic development playground and self-hosting example for the phased gated workflow defined in docs/agentic-workflow-v1.md and resources/AGENT_ONBOARDING_STANDALONE.md"
+authors = ["Kopper"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/kopper/playground"  # placeholder
+
+[lib]
+name = "playground"
+path = "src/lib.rs"
+
+[dependencies]
+# Minimal for Phase 1. New dependencies require approval per docs/boundaries.md and docs/crates.md
