@@ -1,0 +1,29 @@
+# --- Rust ---
+/target/
+**/*.rs.bk
+
+# --- Python (validator scripts, local tooling) ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+.venv/
+venv/
+
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# --- Logs / temp ---
+*.log
+tmp/
+temp/

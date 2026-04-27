@@ -1,15 +1,19 @@
 [package]
-name = "playground"
+name = "my-project"
 version = "0.1.0"
 edition = "2021"
-description = "Agentic development playground and self-hosting example for the phased gated workflow defined in docs/agentic-workflow-v1.md and resources/AGENT_ONBOARDING_STANDALONE.md"
-authors = ["Kopper"]
+description = "Clean starter template for Rust projects (library + binary) using the lightweight phased agentic workflow. See docs/agentic-workflow-v1.md for rules."
+authors = ["Your Name <you@example.com>"]
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/kopper/playground"  # placeholder
+repository = "https://github.com/yourusername/my-project"  # update after forking
 
 [lib]
-name = "playground"
+name = "my_project"
 path = "src/lib.rs"
 
+[[bin]]
+name = "my-project"
+path = "src/main.rs"
+
 [dependencies]
-# Minimal for Phase 1. New dependencies require approval per docs/boundaries.md and docs/crates.md
+# Minimal baseline for template. New dependencies require approval per docs/boundaries.md and docs/crates.md

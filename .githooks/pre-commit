@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+cd "$REPO_ROOT"
+
+echo "[pre-commit] Validating TASKS.md / SLICES.md / PHASES.md state integrity (per dual AI reviews)..."
+python3 "scripts/validate_tasks_state.py" --file "TASKS.md" --file "SLICES.md" --file "PHASES.md" --strict

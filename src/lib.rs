@@ -1,22 +1,17 @@
-//! # Agentic Playground
+//! # My Project
 //!
-//! Self-hosting example and testbed for the lightweight phased agentic development
-//! workflow. See:
-//! - `docs/agentic-workflow-v1.md` (canonical local normative profile)
-//! - `resources/AGENT_ONBOARDING_STANDALONE.md` (upstream portable spec v1.5)
-//! - `docs/memory/index.md` (ADRs and active policy snapshot)
+//! Clean starter template for Rust projects using the phased agentic development
+//! workflow defined in `docs/agentic-workflow-v1.md`.
 //!
-//! This crate establishes the baseline structure for Phase 1.
+//! This crate provides both a library and a binary. The library contains
+//! reusable logic and tests; the binary (`src/main.rs`) is a thin wrapper.
 
-// A simple, documented entrypoint to verify the library builds correctly.
-// No `unwrap()`, `todo!()`, or unsafe. Follows rules from `docs/boundaries.md`,
+// No `unwrap!()`, `todo!()`, or `unsafe`. Follows rules from `docs/boundaries.md`,
 // `docs/coding-style.md`, and `docs/testing.md`.
 
-/// Returns a greeting confirming the agentic playground is initialized.
-///
-/// This function serves as the minimal public API for the bootstrap phase.
+/// Returns a greeting. This is the minimal public API for the template.
 pub fn greet() -> String {
-    "Hello from the agentic Rust playground! Workflow v1 is active.".to_string()
+    "Hello from my-project! The agentic workflow template is ready.".to_string()
 }
 
 #[cfg(test)]
@@ -28,7 +23,7 @@ mod tests {
         let result = greet();
         assert_eq!(
             result,
-            "Hello from the agentic Rust playground! Workflow v1 is active."
+            "Hello from my-project! The agentic workflow template is ready."
         );
     }
 }

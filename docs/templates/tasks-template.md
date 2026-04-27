@@ -1,4 +1,4 @@
-# Current Execution Tasks: Phase 1 — Bootstrap
+# Current Execution Tasks: <Phase Name> — <Active Slice Name>
 
 State: PLANNING_PENDING_APPROVAL
 
@@ -7,16 +7,13 @@ State: PLANNING_PENDING_APPROVAL
 
 ## Slice Reference
 - Active slice source: `SLICES.md` (authoritative for slice state within active phase from `PHASES.md`)
-- Slice objective: Create minimal `Cargo.toml`, `src/lib.rs` with a documented public API and passing tests, plus all supporting workflow documentation and tooling so the template is immediately usable.
-- Slice Definition of Done (DoD): All tasks complete and verified; slice-specific verification passes; material decisions recorded in memory (if any); TASKS.md archived upon completion.
+- Slice objective: <Copied from SLICES.md>
+- Slice Definition of Done (DoD): <Copied from SLICES.md>
 
 ## Binding Contracts
-- `docs/agentic-workflow-v1.md` — Full document (canonical workflow rules, bootstrap §0, tri-state markers, approval gate, verification)
-- `docs/cargo.md` — Cargo and verification commands
-- `docs/boundaries.md` — All "Always", "Ask First", "Never" rules
+- `<path>` - `<section or rule id>` - <how this constrains the current slice>
 
 ## Checklist
-
 Task markers (for **this slice only**):
 - `[ ]` — Todo: planned but not started.
 - `[-]` — Active: currently being worked on. **Exactly one** task should have `[-]`.
@@ -24,13 +21,13 @@ Task markers (for **this slice only**):
 
 If zero or more than one task has `[-]`, ask the human before execution.
 
-- [-] Task 1 - Initialize dual library + binary template
-  - Mode: VDD
-  - Objective: Establish clean `Cargo.toml` (lib + bin), `src/lib.rs` + `src/main.rs`, update all template documents to generic form, ensure validator and full verification chain pass.
-  - Inputs/Contracts: `docs/agentic-workflow-v1.md` §0 (bootstrap), `docs/cargo.md`, `docs/templates/*`
-  - Files to change: `Cargo.toml`, `src/lib.rs`, `src/main.rs`, root docs (`PHASES.md`, `SLICES.md`, `TASKS.md`, `README.md`, `CHANGELOG.md`, `docs/memory/index.md`)
-  - Acceptance criteria: `cargo check`, `cargo test`, `cargo fmt --check`, `cargo clippy --all-targets --all-features -- -D warnings`, `cargo run` all pass; validator --strict passes; no project-specific history remains.
-  - Verification: `LC_ALL=C cargo fmt --check && cargo clippy --all-targets --all-features -- -D warnings && cargo test && python3 scripts/validate_tasks_state.py --strict` (exit 0 + "Validation PASSED" + "test result: ok")
+- [-] Task 1 - <Short title>
+  - Mode: <TDD or VDD>
+  - Objective: <single concrete outcome>
+  - Inputs/Contracts: <path + section/rule id>
+  - Files to change: `<file1>`, `<file2>`
+  - Acceptance criteria: <observable success conditions>
+  - Verification: `LC_ALL=C cargo check` (verify exit code 0 and a line containing "Finished" in output)
 
 Atomicity defaults:
 - Prefer <= 2 source files changed per task.
@@ -39,12 +36,12 @@ Atomicity defaults:
 **Note:** This `TASKS.md` is scoped to the active slice from `SLICES.md`. Completed slices are archived individually.
 
 ## Contract Fingerprint
-- Contracts snapshot date: 2026-04-26
+- Contracts snapshot date: <YYYY-MM-DD>
 - Contract sources:
-  - `docs/agentic-workflow-v1.md`
-  - `docs/templates/*.md`
-- Fingerprint method: Manual review of bootstrap sections
-- Fingerprint value: template-v1.0-clean
+  - `<path-or-id>`
+  - `<path-or-id>`
+- Fingerprint method: <mtime/checksum/manual versioning>
+- Fingerprint value: <computed value>
 
 ## Blocked Protocol
 - Blocker: <specific blocker>
@@ -55,7 +52,7 @@ Atomicity defaults:
 
 ## Slice Exit Verification
 - [ ] Run slice verification (as defined in `SLICES.md` for this slice).
-- [ ] Mark slice complete in `SLICES.md`, archive this `TASKS.md` as `tasks_phase1_bootstrap_YYYY-MM-DD.md`.
+- [ ] Mark slice complete in `SLICES.md`, archive this `TASKS.md` as `tasks_<phase_slug>_<slice_slug>_<YYYY-MM-DD>.md`.
 - [ ] Generate new `TASKS.md` for next active slice from template.
 - [ ] (If last slice in phase) Run full phase verification, update memory/CHANGELOG, set `PHASE_COMPLETE_PENDING_APPROVAL`.
 
