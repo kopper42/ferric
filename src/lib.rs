@@ -1,7 +1,7 @@
-//! # My Project
+//! # Ferric
 //!
-//! Clean starter template for Rust projects using the phased agentic development
-//! workflow defined in `docs/agentic-workflow-v1.md`.
+//! Lightweight phased agentic development workflow for Rust projects, as
+//! defined in `docs/agentic-workflow-v1.md`.
 //!
 //! This crate provides both a library and a binary. The library contains
 //! reusable logic and tests; the binary (`src/main.rs`) is a thin wrapper.
@@ -11,7 +11,7 @@
 
 /// Returns a greeting. This is the minimal public API for the template.
 pub fn greet() -> String {
-    "Hello from my-project! The agentic workflow template is ready.".to_string()
+    "Hello from ferric! The agentic workflow template is ready.".to_string()
 }
 
 #[cfg(test)]
@@ -23,7 +23,7 @@ mod tests {
         let result = greet();
         assert_eq!(
             result,
-            "Hello from my-project! The agentic workflow template is ready."
+            "Hello from ferric! The agentic workflow template is ready."
         );
     }
 }

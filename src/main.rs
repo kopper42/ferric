@@ -1,4 +1,4 @@
-use my_project::greet;
+use ferric::greet;
 
 fn main() {
     println!("{}", greet());

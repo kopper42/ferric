@@ -1,18 +1,18 @@
 [package]
-name = "my-project"
+name = "ferric"
 version = "0.1.0"
 edition = "2021"
-description = "Clean starter template for Rust projects (library + binary) using the lightweight phased agentic workflow. See docs/agentic-workflow-v1.md for rules."
+description = "Ferric - lightweight phased agentic development workflow for Rust projects. See docs/agentic-workflow-v1.md for rules."
 authors = ["Your Name <you@example.com>"]
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/yourusername/my-project"  # update after forking
+repository = "https://github.com/yourusername/ferric"  # update after forking
 
 [lib]
-name = "my_project"
+name = "ferric"
 path = "src/lib.rs"
 
 [[bin]]
-name = "my-project"
+name = "ferric"
 path = "src/main.rs"
 
 [dependencies]

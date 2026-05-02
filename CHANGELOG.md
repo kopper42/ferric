@@ -12,4 +12,7 @@ Human-readable history of completed, verified changes. Record outcomes, not plan
 ## 2026-04-26
 - **Template initialized**: This repository is now a clean, reusable starter template for new Rust projects using the agentic workflow defined in `docs/agentic-workflow-v1.md`. All project-specific history has been removed. Fork, update `Cargo.toml`, and begin with the bootstrap phase.
 
+## 2026-05-01
+- **Project identity updated**: Renamed crate from `my-project`/`my_project` to `ferric` (matching folder), updated `Cargo.toml`, source, README, memory ledger, and documentation. Bootstrap slice now complete.
+
 <!-- Future entries added here after verified tasks. -->

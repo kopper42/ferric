@@ -19,14 +19,23 @@ If zero or more than one phase has `[-]`, agents will ask the human for clarific
 
 ---
 
-## [-] Phase 1: Project Initialization
+## [x] Phase 1: Project Initialization
 
-Goal: Establish a working Rust project with both library and binary (src/lib.rs + src/main.rs), clean build/test/lint/format, and the full agentic workflow tooling so the template is immediately usable.
+Goal: Establish a working Rust project (named `ferric`) with both library and binary (src/lib.rs + src/main.rs), clean build/test/lint/format, and the full agentic workflow tooling so the template is immediately usable.
 
 Definition of Done:
 - All slices in `SLICES.md` for this phase are `[x]` and their per-slice `TASKS.md` files archived/verified.
 - `cargo check`, `cargo test`, `cargo fmt --check`, `cargo clippy --all-targets --all-features -- -D warnings`, and `cargo build --release` all pass.
 - Material decisions recorded in `docs/memory/index.md`.
 - `SLICES.md` for this phase archived upon completion.
+
+## [-] Phase 2: Core Functionality
+
+Goal: Implement additional example functionality, expand tests, and demonstrate the agentic workflow in practice while maintaining all safety boundaries.
+
+Definition of Done:
+- New features added and fully verified per coding-style, testing, and boundaries docs.
+- All slices completed with archived TASKS.md and updated memory/CHANGELOG.
+- Full project remains clean per `cargo` verification chain.
 
 <!-- Future phases added here as objectives become clear. All DoD must remain testable and phase-scoped. -->

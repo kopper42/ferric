@@ -1,10 +1,10 @@
-# My Project Template
+# Ferric
 
-This is a clean, reusable starter template for Rust libraries that includes a lightweight **phased agentic development workflow**.
+Ferric is a clean, reusable starter template for Rust projects that includes a lightweight **phased agentic development workflow**.
 
 ## Quick Start
 
-1. Fork this repository and update `Cargo.toml` (change `name`, `description`, `authors`, `repository`).
+1. Fork this repository (or rename folder) and update `Cargo.toml` (change `name`, `description`, `authors`, `repository` to match your project, e.g. `ferric`).
 2. Run `cargo check` to verify the baseline.
 3. Follow the bootstrap instructions in [`docs/agentic-workflow-v1.md`](docs/agentic-workflow-v1.md) §0 (Bootstrap).
 4. Begin with the active Phase 1 in `PHASES.md` / `SLICES.md` / `TASKS.md` (currently in `PLANNING_PENDING_APPROVAL` state).

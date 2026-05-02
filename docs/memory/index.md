@@ -1,6 +1,6 @@
 # Project Memory Ledger
 
-Last updated: Template Initialization (2026-04-26)
+Last updated: Project renamed to Ferric and bootstrap completed (2026-05-01)
 
 ## Index
 - Architecture baseline: `docs/architecture.md`
@@ -54,5 +54,9 @@ The memory system uses four layered directories with distinct retention and revi
 **Consequences**: Better context window usage while maintaining safety gates and validator enforcement.
 
 See `docs/memory/topic-template.md` for new ADRs and `docs/agentic-workflow-v1.md` for full current rules.
+
+### Decision: Root folder renamed to `ferric`; crate identity updated from `my-project` template
+**Date**: 2026-05-01  
+**Outcome**: No internal absolute paths existed. All changes were relative or manifest-driven. Crate name, lib/bin names, strings, README, memory, changelog, PHASES/SLICES/TASKS updated consistently. Bootstrap slice advanced.
 
 <!-- Additional educational ADRs or decisions can be added here as the template is used. -->

@@ -1,4 +1,4 @@
-# Slices for Active Phase: Phase 2 — Core Functionality
+# Slices for Active Phase: Phase 1 — Project Initialization
 
 AI agents: Use this file to determine slice order within the active phase, active slice, per-slice goals/outcomes, and DoD. Do not place full task checklists here (those live in the per-slice `TASKS.md`).
 
@@ -24,15 +24,15 @@ If zero or more than one slice has `[-]`, agents will ask the human for clarific
 
 ---
 
-## [-] Slice 1: Add Example Features
+## [x] Slice 1: Bootstrap
 
-Goal: Extend the library with additional public APIs, improve tests, update documentation, and demonstrate full agentic workflow usage while strictly following all boundaries from `docs/boundaries.md`, `docs/coding-style.md`, and `docs/testing.md`.
+Goal: Create minimal `Cargo.toml`, `src/lib.rs` with a documented public API and passing tests, plus all supporting workflow documentation and tooling so the template (named `ferric`) is immediately usable.
 
 Definition of Done:
-- New functionality added with 100% test coverage for happy paths and edges.
-- `cargo test`, `cargo clippy`, validator, and full verification pass.
-- Material decisions recorded in `docs/memory/index.md`.
-- TASKS.md for this slice archived upon completion.
+- All tasks in the corresponding `TASKS.md` (for this slice) are complete and verified.
+- Slice-specific verification passes (`cargo check`, `cargo test`, `cargo fmt --check`, `cargo clippy`).
+- Material decisions for this slice (if any) recorded in `docs/memory/index.md`.
+- Current `TASKS.md` archived to `docs/task_archive/` upon slice completion.
 
 <!-- Add slices as needed for the active phase only. When phase changes, archive this file and create fresh SLICES.md. Keep each DoD testable and slice-scoped. -->
 
